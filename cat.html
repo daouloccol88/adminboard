@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
+         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>Categories</title>
+    </head>
+    <body>
+        <section>
+            <div class="overlay bg-dark">
+                <div class="container d-flex justify-content-around top header">
+                    <nav class="col navbar navbar-expand-lg navbar-dark">
+                        <p href="index.html" class="navbar-brand ml-5 pt-3 ">
+                            AdminBoard
+                        </p>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="navbarContent" class="col collapse navbar-collapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a href="index.html" class="nav-link">Dashboards</a>
+                                    </li>
+    
+                                    <li class="nav-item active">
+                                        <a href="post.html" class="nav-link">Posts</a>
+                                    </li>
+    
+                                    <li class="nav-item active">
+                                        <a href="cat.html" class="nav-link">Categories</a>
+                                    </li>
+    
+                                    <li class="nav-item active">
+                                        <a href="user.html" class="nav-link">Utilisateurs</a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav mr-5 ">
+                                    <li>
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Welcome back Dave
+                                        </button>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="profil.html"><i class="fas fa-user mr-2"></i>Profil</a>
+                                          <a class="dropdown-item" href="sett.html"><i class="fas fa-user-cog mr-2"></i>Parameters</a>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="text-light ml-3">
+                                        <a class="btn text-light" href="log.html">
+                                            <i class="fas fa-user-times mr-1"></i>Log out
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="bg-success pt-1 pb-1 text-light">
+            <h1 class="ml-5"><i class="far fa-folder-open fa-2x mr-2"></i>Categories</h1>
+        </section>
+        <section class="pt-4 pb-4 bg-gris"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12"></div>
+                    <div class="col-xl-6 col-sm-12">
+                        <form class="form-inline">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search" >
+                              <div class="input-group-prepend">
+                                <span class="input-group-text bg-success text-light" >Search</span>
+                              </div>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <table class="table table-striped border rounded">
+                           <tr><td colspan="5"><h3>Les Catégories</h3></td></tr> 
+                            <tbody>
+                                <tr class="bg-dark text-light">
+                                    <th class="col-2">#</th>
+                                    <th class="col-5">Titre</th>
+                                    <th class="col-5">Date du post</th>
+                                  </tr>
+                              <tr>
+                                <th>1</th>
+                                <td>Web Development</td>
+                                <td>Octobre 12, 2019</td>
+                              </tr>
+                              <tr>
+                                <th >2</th>
+                                <td>Tech Gadget</td>
+                                <td>Octobre 13, 2019</td>
+                              </tr>
+                              <tr>
+                                <th >4</th>
+                                <td>Business</td>
+                                <td>Octobre 15, 2019</td>
+                              </tr>
+                              <tr>
+                                <th >6</th>
+                                <td>Health & Wellness</td>
+                                <td>Octobre 17, 2019</td>
+                              </tr>
+                              <tr>
+                                  <td colspan="4">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul>
+                                      </nav>
+                                  </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="text-center bg-dark mt-5 text-light">
+            <p class="pt-4 pb-3">Copyright © 2019 AdminBoard</p>
+        </footer>
+                
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#editor' ) )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
+        <style>
+            footer
+            {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            .bg-gris
+    {
+        background-color: rgb(219, 212, 212);
+    }
+        </style>
+    </body>
